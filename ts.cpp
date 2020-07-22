@@ -1,6 +1,6 @@
 #include "tcp_socket.h"
 
-int main()
+int main(int argc,const char* argv[])
 {
 	TcpServer* tcpServer = new TcpServer("192.168.0.111",6688);
 	TcpSocket* tcpSocket = tcpServer->accept();
